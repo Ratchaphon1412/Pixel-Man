@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <div class="h-screen w-full"></div>
+    <LandingPage />
   </NuxtLayout>
 </template>
 
