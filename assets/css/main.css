@@ -1,3 +1,47 @@
+/* @include font-face(Pixellet , '@/assets/fonts/pixellet/pixellet.ttf');
+@include font-face(PixelletMedium , '@/assets/fonts/pixellet/pixelletMedium.ttf');
+@include font-face(PixelletBold , '@/assets/fonts/pixellet/pixelletbold.ttf');
+@include font-face(PixelletItalic , '@/assets/fonts/pixellet/pixelletitalic.ttf');
+@include font-face(PixelletBoldItalic , '@/assets/fonts/pixellet/pixelletbolditalic.ttf');
+@include font-face(PixelletCircle , '@/assets/fonts/pixellet/pixelletcircle.ttf'); */
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face{
+    font-family: 'Pixellet';
+    src: url('@/assets/fonts/pixellet/pixellet.ttf');
+ 
+}
+
+@font-face{
+    font-family: 'PixelletMedium';
+    src: url('@/assets/fonts/pixellet/pixelletMedium.ttf');
+  
+}
+
+@font-face{
+    font-family: 'PixelletBold';
+    src: url('@/assets/fonts/pixellet/pixelletbold.ttf');
+
+}
+
+@font-face{
+    font-family: 'PixelletItalic';
+    src: url('@/assets/fonts/pixellet/pixelletitalic.ttf');
+
+}
+
+@font-face{
+    font-family: 'PixelletBoldItalic';
+    src: url('@/assets/fonts/pixellet/pixelletbolditalic.ttf');
+   
+}
+
+@font-face{
+    font-family: 'PixelletCircle';
+    src: url('@/assets/fonts/pixellet/pixelletcircle.ttf');
+   
+}
