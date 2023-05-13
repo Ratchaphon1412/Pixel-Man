@@ -9,4 +9,12 @@ export default defineNuxtConfig({
         },
       },
     modules: ['@pinia/nuxt'],
+    app:{
+      head:{
+        title:'Pixel Man',
+        link:[
+          {rel:'icon', type:'image/x-icon', href:'/logo.png'}
+        ]
+      }
+    }
 })
