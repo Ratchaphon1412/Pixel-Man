@@ -7,10 +7,24 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
     "./app.vue",
+    "./node_modules/flowbite.{js,ts}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+      //  sans:['Pixellet'],
+        pixellet: ['Pixellet'],
+        pixelletMedium: ['PixelletMedium'],
+        pixelletBold: ['PixelletBold'],
+        pixelletItalic: ['PixelletItalic'],
+        pixelletBoldItalic: ['PixelletBoldItalic'],
+        pixelletCircle: ['PixelletCircle'],
+
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
