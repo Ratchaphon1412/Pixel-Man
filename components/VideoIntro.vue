@@ -1,10 +1,7 @@
 <template>
   <div>
     <video ref="intro" autoplay loop muted playsinline>
-      <source
-        src="@/assets/video/pexels-matthias-groeneveld-4306405-3840x2160-24fps.mp4"
-        type="video/mp4"
-      />
+      <source :src="videoPath" type="video/mp4" />
     </video>
   </div>
 </template>
@@ -14,7 +11,11 @@ export default {
   name: "VideoIntro",
   mounted() {
     const video = this.$refs.intro;
-    video.playbackRate = 2.5;
+    video.playbackRate = this.speedVideo;
+  },
+  props: {
+    videoPath: String,
+    speedVideo: Number,
   },
 };
 </script>
