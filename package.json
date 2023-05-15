@@ -17,6 +17,7 @@
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
+    "@duskmoon/vue3-typed-js": "^0.0.4",
     "@pinia/nuxt": "^0.4.10",
     "flowbite": "^1.6.5",
     "pinia": "^2.0.36"
