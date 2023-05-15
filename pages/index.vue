@@ -1,6 +1,7 @@
 <template>
   <NuxtLayout>
-    <LandingPage />
+    <Hero />
+    <Inspiration />
   </NuxtLayout>
 </template>
 
