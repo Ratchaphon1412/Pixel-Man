@@ -66,12 +66,21 @@
             >
           </li>
           <li>
-            <button
+            <nuxt-link to="/login">
+              <button
+              type="button"
+              class="text-black bg-amber-400 font-pixellet font-thin focus:ring-4 focus:outline-none hover:text-[#3581D8] rounded-lg px-4 py-2 text-center mr-3 md:mr-0"
+              id="login"
+            >
+              Login
+            </button>
+            </nuxt-link>
+            <!-- <button
               type="button"
               class="text-black font-pixellet bg-[#FFE135] font-thin focus:ring-4 focus:outline-none hover:text-[#3581D8] rounded-lg px-4 py-2 text-center mr-3 md:mr-0"
             >
               Login
-            </button>
+            </button> -->
           </li>
         </ul>
       </div>
@@ -84,3 +93,26 @@ export default {
   name: "Navbar",
 };
 </script>
+
+<style scoped>
+#login{
+  position: relative;
+  transition: 0.5s;
+}
+
+#login:hover{
+  background: red url('https://i.postimg.cc/wBXGXbWN/pixel.png');
+  transition-delay: 0.8s;
+  background-size: 180px;
+  animation: animate 0.8s steps(8) forwards;
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+</style>
