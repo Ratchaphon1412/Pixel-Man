@@ -2,6 +2,7 @@
   <NuxtLayout>
     <Hero />
     <Inspiration />
+    <Presntration />
   </NuxtLayout>
 </template>
 
