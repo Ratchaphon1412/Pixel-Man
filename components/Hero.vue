@@ -1,13 +1,13 @@
 <template>
   <section class="overflow-hidden">
-    <div class="relative overflow-hidden w-full h-screen">
+    <div class="relative overflow-hidden w-full h-screen pallarax">
       <VideoIntro
-        videoPath="https://firebasestorage.googleapis.com/v0/b/pixel-man-b2216.appspot.com/o/MainLandingVideo-Pixel-Man.mp4?alt=media&token=ead8ed81-598a-4c13-a482-f29cc3bdcf32"
+        videoPath="https://firebasestorage.googleapis.com/v0/b/pixel-man-97cb5.appspot.com/o/MainLandingVideo-Pixel-Man.mp4?alt=media&token=d0b5e150-bba9-46ea-9127-6a4bb19088e4"
         :speedVideo="speedVideo"
       />
 
       <div
-        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed js-show-on-scroll"
+        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden"
         style="background-color: rgba(0, 0, 0, 0.3)"
       >
         <div class="flex justify-center items-center h-full">
@@ -37,3 +37,5 @@ export default {
   },
 };
 </script>
+
+<style scoped></style>
