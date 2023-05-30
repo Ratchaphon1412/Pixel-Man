@@ -13,7 +13,7 @@ export default defineNuxtConfig({
       head:{
         title:'Pixel Man',
         link:[
-          {rel:'icon', type:'image/x-icon', href:'/logo.png'}
+          {rel:'icon', type:'image/x-icon', href:'/LogoPixelMan.ico'}
         ]
       }
     }
