@@ -45,10 +45,10 @@
             >
           </li>
           <li>
-            <a
+            <NuxtLink to="/store"
               href="#"
               class="font-pixellet font-thin block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 hover:text-yellow-300"
-              >Store</a
+              >Store</NuxtLink
             >
           </li>
           <li>
@@ -91,7 +91,7 @@
 <script>
 export default {
   name: "Navbar",
-};
+}
 </script>
 
 <style scoped>

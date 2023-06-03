@@ -8,7 +8,10 @@ export default defineNuxtConfig({
           autoprefixer: {},
         },
       },
-    modules: ['@pinia/nuxt'],
+    modules: [
+      '@pinia/nuxt',
+      '@nuxt/devtools',
+    ],
     app:{
       head:{
         title:'Pixel Man',
