@@ -78,8 +78,4 @@
   </NuxtLayout>
 </template>
 
-<style scoped>
-#main {
-  background-image: url("@/assets/images/Night Aesthetic GIF - Night Aesthetic 80s - Discover & Share GIFs.gif");
-}
-</style>
+<style scoped></style>
