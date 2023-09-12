@@ -1,37 +1,39 @@
 <template>
-    <NuxtLayout>
-        <!-- <p class="h-[72px]"></p> -->
-        <section class="grid bg-cover bg-no-repeat dark:bg-black-900 w-full mx-auto h-screen" id="main">
-          <!-- <img src="@/assets/images/Night Aesthetic GIF - Night Aesthetic 80s - Discover & Share GIFs.gif"> -->
-          <!--login card-->
-          <div
-            class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 pd-9 block place-self-center"
+  <NuxtLayout>
+    <!-- <p class="h-[72px]"></p> -->
+    <section
+      class="grid bg-cover bg-no-repeat dark:bg-black-900 w-full mx-auto h-screen bg-black"
+    >
+      <!-- <img src="@/assets/images/Night Aesthetic GIF - Night Aesthetic 80s - Discover & Share GIFs.gif"> -->
+      <!--login card-->
+      <div
+        class="w-full bg-black rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 pd-9 block place-self-center"
+      >
+        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+          <h1
+            class="text-xl font-bold leading-tight tracking-tight text-amber-400 md:text-2xl dark:text-white font-pixellet"
           >
-            <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1
-                class="text-xl font-bold leading-tight tracking-tight text-amber-400 md:text-2xl dark:text-white font-pixellet"
-              >
-                Sign in to your account
-              </h1>
-              <!--login google facebook and github -->
-              <div class="mt-16 grid space-y-4">
-                <button
-                  click="loginWithGoogle"
-                  class="group h-12 px-6 border-2 border-gray-300 dark:border-gray-700 rounded-full transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-red-400 focus:bg-blue-50 active:bg-red-100"
+            Sign in to your account
+          </h1>
+          <!--login google facebook and github -->
+          <div class="mt-16 grid space-y-4">
+            <button
+              click="loginWithGoogle"
+              class="group h-12 px-6 border-2 border-gray-300 dark:border-gray-700 rounded-full transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-blue-500 hover:bg-white focus:bg-blue-50 active:bg-red-100"
+            >
+              <div class="relative flex items-center space-x-4 justify-center">
+                <img
+                  src="https://tailus.io/sources/blocks/social/preview/images/google.svg"
+                  class="absolute left-0 w-5"
+                  alt="google logo"
+                />
+                <span
+                  class="block w-max font-semibold tracking-wide text-white dark:text-white text-sm transition duration-300 group-hover:text-blue-500 sm:text-base font-pixellet"
+                  >Continue with Google</span
                 >
-                  <div class="relative flex items-center space-x-4 justify-center">
-                    <img
-                      src="https://tailus.io/sources/blocks/social/preview/images/google.svg"
-                      class="absolute left-0 w-5"
-                      alt="google logo"
-                    />
-                    <span
-                      class="block w-max font-semibold tracking-wide text-gray-700 dark:text-white text-sm transition duration-300 group-hover:text-red-600 sm:text-base font-pixellet"
-                      >Continue with Google</span
-                    >
-                  </div>
-                </button>
-                <!-- <button
+              </div>
+            </button>
+            <!-- <button
                   click="loginWithGithub"
                   class="group h-12 px-6 border-2 border-gray-300 dark:border-gray-700 rounded-full transition duration-300 hover:border-black-400 focus:bg-blue-50 active:bg-blue-100"
                 >
@@ -52,33 +54,32 @@
                     >
                   </div>
                 </button> -->
-                <button
-                  click="loginWithFacebook"
-                  class="group h-12 px-6 border-2 border-gray-300 dark:border-gray-700 rounded-full transition duration-300 ease-in-out hover:translate-y-1 hover:scale-110 hover:border-blue-400 focus:bg-blue-50 active:bg-blue-100"
+            <button
+              click="loginWithFacebook"
+              class="group h-12 px-6 border-2 border-gray-300 dark:border-gray-700 rounded-full transition duration-300 ease-in-out hover:translate-y-1 hover:scale-110 hover:border-blue-400 hover:bg-white focus:bg-blue-50 active:bg-blue-100"
+            >
+              <div class="relative flex items-center space-x-4 justify-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg"
+                  class="absolute left-0 w-5"
+                  alt="Facebook logo"
+                />
+                <span
+                  class="block w-max font-semibold tracking-wide text-white dark:text-white text-sm transition duration-300 group-hover:text-blue-600 sm:text-base font-pixellet"
+                  >Continue with Facebook</span
                 >
-                  <div class="relative flex items-center space-x-4 justify-center">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg"
-                      class="absolute left-0 w-5"
-                      alt="Facebook logo"
-                    />
-                    <span
-                      class="block w-max font-semibold tracking-wide text-gray-700 dark:text-white text-sm transition duration-300 group-hover:text-blue-600 sm:text-base font-pixellet"
-                      >Continue with Facebook</span
-                    >
-                  </div>
-                </button>
               </div>
-            </div>
-          <!--end card-->
+            </button>
+          </div>
         </div>
-      </section>
-    </NuxtLayout>
+        <!--end card-->
+      </div>
+    </section>
+  </NuxtLayout>
 </template>
 
-
 <style scoped>
-#main{
-  background-image: url('@/assets/images/Night Aesthetic GIF - Night Aesthetic 80s - Discover & Share GIFs.gif');
+#main {
+  background-image: url("@/assets/images/Night Aesthetic GIF - Night Aesthetic 80s - Discover & Share GIFs.gif");
 }
 </style>
